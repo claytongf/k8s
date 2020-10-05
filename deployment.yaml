@@ -1,11 +1,11 @@
 apiVersion: apps/v1
-selector:
-    matchLabels:
-        app: hello-nginx
 kind: Deployment
 metadata: 
     name: hello-nginx
 spec:
+    selector:
+        matchLabels:
+            app: hello-nginx
     template:
         metadata:
             labels:
