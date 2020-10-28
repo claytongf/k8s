@@ -10,8 +10,5 @@ data:
             index index.php index.html;
             root /usr/share/nginx/html;
 
-            # rewrite ^/google$ http://google.com permanent;
+            rewrite ^/google$ http://google.com permanent;
         }
-    entrypoint.sh: |
-        #!/bin/bash
-        echo 'Code.education Rocks' > /usr/share/nginx/html/index.html 
